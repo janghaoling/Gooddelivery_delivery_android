@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.gooddelivery.delivery.activities.ServiceFlow">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorWhite"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed" />
+
+        <LinearLayout
+            android:id="@+id/ss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ImageView
+                android:id="@+id/icon_started_towards_restaurant"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/round"
+                android:contentDescription="@string/started_restaurant"
+                android:padding="4dp"
+                android:src="@drawable/ic_scooter" />
+
+            <ImageView
+                android:id="@+id/icon_reached_restaurant"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/round"
+                android:contentDescription="@string/reached_restaurant"
+                android:padding="8dp"
+                android:src="@drawable/ic_reached_restaurant" />
+
+            <ImageView
+                android:id="@+id/icon_order_picked_up"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/round"
+                android:contentDescription="@string/order_picked_up"
+                android:padding="8dp"
+                android:src="@drawable/ic_order_picked_up" />
+
+            <ImageView
+                android:id="@+id/icon_order_delivered"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/round"
+                android:contentDescription="@string/order_delivered"
+                android:padding="8dp"
+                android:src="@drawable/ic_order_delivered" />
+
+            <ImageView
+                android:id="@+id/icon_payment_received"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/round"
+                android:contentDescription="@string/payment_received"
+                android:padding="8dp"
+                android:src="@drawable/ic_payment_received" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:text="@string/time_left"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/time_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:text="@string/time_left_txt"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/shop_details_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/shop_avatar"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/burg" />
+
+                        <LinearLayout
+                            android:id="@+id/shop_name_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_toEndOf="@+id/shop_avatar"
+                            android:layout_toRightOf="@+id/shop_avatar">
+
+                            <TextView
+                                android:id="@+id/shop_name"
+                                android:fontFamily="@font/nunito_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textAllCaps="true"
+                                android:textSize="16sp"
+                                tools:ignore="MissingPrefix" />
+
+                            <TextView
+                                android:id="@+id/shop_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginStart="4dp"
+                                android:maxLines="1"
+                                android:textColor="@color/colorAccent" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/shop_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/shop_name_ll"
+                            android:layout_marginBottom="16dp"
+                            android:layout_toEndOf="@+id/shop_avatar"
+                            android:layout_toRightOf="@+id/shop_avatar"
+                            android:maxLines="3" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/shop_address"
+                            android:layout_toEndOf="@id/shop_avatar"
+                            android:layout_toRightOf="@id/shop_avatar"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/shop_call"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:contentDescription="@string/call"
+                                android:src="@drawable/pc48" />
+
+                            <ImageView
+                                android:id="@+id/shop_navigation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha="128"
+                                android:contentDescription="@string/navigation"
+                                android:src="@drawable/compass48" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/user_details_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/user_avatar"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:contentDescription="@string/user"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/burg" />
+
+                        <LinearLayout
+                            android:id="@+id/user_name_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_toEndOf="@+id/user_avatar"
+                            android:layout_toRightOf="@+id/user_avatar">
+
+                            <TextView
+                                android:id="@+id/user_name"
+                                android:fontFamily="@font/nunito_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textAllCaps="true"
+                                android:textSize="16sp"
+                                tools:ignore="MissingPrefix" />
+
+                            <TextView
+                                android:id="@+id/user_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginStart="4dp"
+                                android:maxLines="1"
+                                android:textColor="@color/colorAccent" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/user_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_name_ll"
+                            android:layout_marginBottom="16dp"
+                            android:layout_toEndOf="@+id/user_avatar"
+                            android:layout_toRightOf="@+id/user_avatar"
+                            android:maxLines="3" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/user_address"
+                            android:layout_toEndOf="@id/user_avatar"
+                            android:layout_toRightOf="@id/user_avatar"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/user_call"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:contentDescription="@string/call"
+                                android:src="@drawable/pc48" />
+
+                            <ImageView
+                                android:id="@+id/user_navigation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha="128"
+                                android:contentDescription="@string/navigation"
+                                android:src="@drawable/compass48" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#c0c0c0" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/order_id"
+                                android:fontFamily="@font/nunito_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="16dp"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="16sp"
+                                tools:ignore="MissingPrefix" />
+
+                            <TextView
+                                android:id="@+id/payment_mode"
+                                android:fontFamily="@font/nunito_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:padding="16dp"
+                                android:textAllCaps="true"
+                                android:textSize="16sp"
+                                android:visibility="invisible"
+                                tools:ignore="MissingPrefix" />
+
+                            <TextView
+                                android:id="@+id/order_created_at"
+                                android:fontFamily="@font/nunito_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:padding="16dp"
+                                android:textSize="16sp"
+                                android:visibility="gone"
+                                tools:ignore="MissingPrefix" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#c0c0c0" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/product_items_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#c0c0c0" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="8dp"
+                                    android:text="@string/item_total"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/item_total"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="end"
+                                    android:padding="8dp"
+                                    android:textSize="16sp"
+                                    tools:ignore="MissingPrefix" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="8dp"
+                                    android:text="@string/service_tax"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/service_tax"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="end"
+                                    android:padding="8dp"
+                                    android:textSize="16sp"
+                                    tools:ignore="MissingPrefix" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="8dp"
+                                    android:text="@string/delivery_charges"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/delivery_charges"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="end"
+                                    android:padding="8dp"
+                                    android:textSize="16sp"
+                                    tools:ignore="MissingPrefix" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="8dp"
+                                    android:text="@string/discount"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/discount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="end"
+                                    android:padding="8dp"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="8dp"
+                                    android:text="@string/wallet_detection"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/wallet_detection"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="end"
+                                    android:padding="8dp"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end"
+                                    android:padding="8dp"
+                                    android:text="@string/total"
+                                    android:textColor="@color/primary_text"
+                                    android:textSize="16sp"
+                                    tools:ignore="MissingPrefix" />
+
+                                <TextView
+                                    android:id="@+id/total"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:gravity="end"
+                                    android:padding="8dp"
+                                    android:textColor="@color/primary_text"
+                                    android:textSize="16sp"
+                                    tools:ignore="MissingPrefix" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/shift_status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp">
+
+        <com.gooddelivery.delivery.helper.OnlySeekableSeekBar
+            android:id="@+id/shift_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/swipe_button_shape"
+            android:clickable="false"
+            android:focusable="false"
+            android:max="100"
+            android:padding="8dp"
+            android:progress="4"
+            android:progressDrawable="@android:color/transparent"
+            android:splitTrack="false"
+            android:thumb="@drawable/ic_thumb_scooter"
+            android:thumbTint="@color/grey" />
+
+        <TextView
+            android:id="@+id/status_label"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:paddingEnd="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="0dp"
+            android:paddingStart="24dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            tools:ignore="MissingPrefix" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gooddelivery.delivery.activities.Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/new_task_label"
+                        android:fontFamily="@font/nunito_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/new_task"
+                        tools:ignore="MissingPrefix" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/new_task_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutAnimation="@anim/layout_animation_fall_down"
+                            android:nestedScrollingEnabled="false"
+                            android:orientation="vertical"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                        <LinearLayout
+                            android:id="@+id/error_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/error_img"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginBottom="16dp" />
+
+                            <TextView
+                                android:id="@+id/error_message"
+                                android:fontFamily="@font/nunito_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textAllCaps="true"
+                                android:textColor="@color/primary_text"
+                                android:textSize="14sp"
+                                tools:ignore="MissingPrefix" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/completed_task_rootview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/completed_task_label"
+                        android:fontFamily="@font/nunito_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:visibility="visible"
+                        tools:ignore="MissingPrefix" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/completed_task_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutAnimation="@anim/layout_animation_fall_down"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/internet_error_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/network_error"
+                android:src="@drawable/no_internet" />
+
+            <TextView
+                android:fontFamily="@font/nunito_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/network_error"
+                android:textAllCaps="true"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

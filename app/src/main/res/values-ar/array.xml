@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="help_array">
+        <item>"Items delayed from restaurant"</item>
+        <item>"Item delayed from packing"</item>
+        <item>"Item updations late"</item>
+        <item>"Others"</item>
+    </string-array>
+
+    <string-array name="history_filter_category">
+        <item>Today</item>
+        <item>This Week</item>
+        <item>This Month</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+
+
+</resources>

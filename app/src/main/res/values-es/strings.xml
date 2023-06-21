@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname  "Deliver Around">
+    <!ENTITY order "Pedido">
+    <!ENTITY shift "Shift">
+    ]>
+<resources>
+    <string name="app_name">Good Riders</string>
+    <string name="mobile_number">Número de celular</string>
+    <string name="break_">Descanso</string>
+    <string name="select_vehicle">"Seleccionar vehículo"</string>
+    <string name="turn_on_start_shift">CONÉCTATE PARA RECIBIR PEDIDOS</string>
+    <string name="no_results">"No hay resultados"</string>
+    <string name="notice_board">"Tablero de anuncios"</string>
+    <string name="check_your_internet_connection">"Por favor revisa tu conexion a internet"</string>
+    <string name="waiting_for_new_task">"Esperando una nueva tarea"</string>
+    <string name="terms_and_conditions">"Términos y Condiciones"</string>
+
+    <string name="connect_to_network">Conéctate a la red</string>
+    <string name="connect_to_wifi">Conéctate al WIFI</string>
+    <string name="quit">Salir</string>
+
+    <string name="navigation_drawer_open">Abrir la ventana de navegación.</string>
+    <string name="navigation_drawer_close">Cerrar la ventana de navegación</string>
+
+    <string name="new_order_request">"Nueva solicitud de pedido"</string>
+    <string name="deliver">"Entregado"</string>
+    <string name="delivered">"Entregado"</string>
+    <string name="order_delivered_successfully">"&order; Entregado con éxito"</string>
+    <string name="order">"&order;"</string>
+    <string name="orders">"&order;s"</string>
+    <string name="new_task">Nueva tarea</string>
+    <string name="completed_tasks">Tareas completadas</string>
+    <string name="new_order_txt">Nueva solicitud de pedido</string>
+    <string name="time_left">Tiempo restante</string>
+    <string name="time_left_txt">Quedan 120 segundos</string>
+    <string name="started_restaurant">Dirigete hacia el restaurante</string>
+    <string name="verification_code_txt">Código de verificación</string>
+    <string name="continu">Continuar</string>
+    <string name="start_shift">CONECTARSE</string>
+    <string name="shift_status">RECIBIR PEDIDOS</string>
+    <string name="end_shift">DESCONECTARSE</string>
+    <string name="vehicle_number">Ingresa el número del vehículo</string>
+    <string name="name">Nombre</string>
+    <string name="user_id">ID de usuario</string>
+    <string name="email">Correo electrónico</string>
+    <string name="update">Actualizar</string>
+    <string name="enter_mobile_number">"Ingrese el número de celular"</string>
+    <string name="init_shift">Conectado</string>
+    <string name="wallet_detection">Billetera</string>
+
+    <string name="reached_restaurant">"ESPERANDO EN EL RESTAURANTE"</string>
+    <string name="order_picked_up">"&order; Recogido"</string>
+    <string name="order_delivered">"&order; Entregado"</string>
+    <string name="payment_received">"Pago recibido"</string>
+    <string name="back">"Atras"</string>
+    <string name="profile">"Perfil"</string>
+    <string name="order_history">"Historial"</string>
+    <string name="order_message">&order; #%d</string>
+    <string name="you_owed">"Debes "</string>
+    <string name="item_total">"Total"</string>
+    <string name="service_tax">"Impuesto de servicio"</string>
+    <string name="delivery_charges">"Costo de envío"</string>
+    <string name="discount">"Descuento"</string>
+    <string name="total">"Total"</string>
+    <string name="payment_mode">"Pago "</string>
+    <string name="no_of_items">"No. de productos"</string>
+    <string name="bill_amount">"Monto total"</string>
+    <string name="bill_paid">"Total del pago"</string>
+    <string name="returned">"Cambio"</string>
+    <string name="other">"Otro"</string>
+    <string name="reason">"Razón"</string>
+    <string name="chat_us">"Chatea con nosotros"</string>
+    <string name="call_us">"Llamanos"</string>
+    <string name="please_type_the_verification_code">"Por favor ingresa el código de verificación que te enviamos"</string>
+    <string name="amount_to_be_paid">"Monto a pagar"</string>
+    <string name="please_handover_the_amount_earned">"Por favor retornar la cantidad que obtuviste en efectivo"</string>
+    <string name="please_settle_the_amount_to_the_respective_restaurant">"Por favor pagar la cantidad respectiva al restaurante"</string>
+    <string name="type_a_message">"Escribe un mensaje"</string>
+    <string name="country_name">"Nombre del país"</string>
+    <string name="feedback">"Retroalimentación"</string>
+    <string name="how_was_the_delivery">"Como te fue con la entrega?"</string>
+    <string name="terrible">"Terrible"</string>
+    <string name="bad">"Mal"</string>
+    <string name="okay">"Bien"</string>
+    <string name="good">"Muy bien"</string>
+    <string name="superb">"Estupendo"</string>
+    <string name="give_some_feedback_in_words">"Dejar algún comentario."</string>
+    <string name="submit">"Enviar"</string>
+    <string name="report">"Reportar"</string>
+    <string name="dispute">"Disputa"</string>
+    <string name="help">"Ayuda"</string>
+    <string name="amount_to_pay">"Monto a pagar"</string>
+    <string name="otp">Otp</string>
+    <string name="enter_otp">Por favor ingrese el código otp</string>
+    <string name="please_enter_amount">Por favor ingrese la cantidad</string>
+    <string name="invalid_otp">Código Otp inválido</string>
+    <string name="full_amount">Por favor ingresa el monto total</string>
+    <string name="enter_the_amount_paid">"Ingresa el monto pagado"</string>
+    <string name="balance">"Balance"</string>
+    <string name="paid">"Pago"</string>
+    <string name="user">"Usuario"</string>
+    <string name="shift">"&shift;"</string>
+    <string name="source">Origen</string>
+    <string name="destination">Destino</string>
+    <string name="order_status">Estado del pedido</string>
+    <string name="upload_photo">Subir foto</string>
+    <string name="call">Llamar</string>
+    <string name="navigation">Navegar</string>
+    <string name="network_error">No se pudo conectar a internet!</string>
+    <string name="shop">Tienda</string>
+    <string name="change_language">Cambiar idioma</string>
+    <string name="please_start_shift">Conéctate para recibir pedidos</string>
+    <string name="cash">Efectivo</string>
+    <string name="card">Tarjeta</string>
+    <string name="order_cancelled">Pedido cancelado</string>
+    <string name="the_order_has_been_cancelled_by_user">El pedido ha sido cancelado por el usuario</string>
+    <string name="cancelled">Cancelado</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="something_went_wrong">Algo salió mal</string>
+    <string name="reject">Rechazar</string>
+    <string name="accept">Aceptar</string>
+
+    <string-array name="languages">
+        <item>Inglés</item>
+        <item>Español</item>
+    </string-array>
+
+    <string-array name="help_array">
+        <item>"Productos demorados por el restaurante"</item>
+        <item>"Producto demorado por empaque"</item>
+        <item>"Demora en la actualización del producto"</item>
+        <item>"Otros"</item>
+    </string-array>
+
+    <string-array name="history_filter_category">
+        <item>Hoy</item>
+        <item>Esta semana</item>
+        <item>Este mes</item>
+    </string-array>
+
+    <string name="live_task">SOLICITUD DE PEDIDOS</string>
+    <string name="select_map">Seleccione un mapa</string>
+</resources>

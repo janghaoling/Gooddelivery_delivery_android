@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:textSize="18sp"
+    android:drawableRight="@drawable/arrow_24"
+    android:drawableEnd="@drawable/arrow_24"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

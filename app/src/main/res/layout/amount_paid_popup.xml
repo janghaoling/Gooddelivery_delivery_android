@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:fontFamily="@font/nunito_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="@string/amount_to_be_paid"
+        android:textAllCaps="true"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/amount_to_be_paid"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="@string/please_handover_the_amount_earned"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/end_shift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:visibility="visible"
+        android:text="@string/end_shift"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

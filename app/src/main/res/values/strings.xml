@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname  "Deliver Around">
+    <!ENTITY order "Order">
+    <!ENTITY shift "Shift">
+    ]>
+<resources>
+    <string name="app_name">Good Riders</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="break_">Break</string>
+    <string name="select_vehicle">"Select vehicle"</string>
+    <string name="turn_on_start_shift">"Turn on Start &shift; to go for delivery"</string>
+    <string name="no_results">"No Results"</string>
+    <string name="notice_board">"Notice Board"</string>
+    <string name="check_your_internet_connection">"Please check your Internet connection"</string>
+    <string name="waiting_for_new_task">"Waiting for the new task"</string>
+    <string name="terms_and_conditions">"Terms and Conditions"</string>
+
+    <string name="connect_to_network">Connect to network or quit</string>
+    <string name="connect_to_wifi">Connect to WIFI</string>
+    <string name="quit">Quit</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="new_order_request">"New &order; Request"</string>
+    <string name="deliver">"Delivered"</string>
+    <string name="delivered">"Delivered"</string>
+    <string name="order_delivered_successfully">"&order; Delivered Successfully"</string>
+    <string name="order">"&order;"</string>
+    <string name="orders">"&order;s"</string>
+    <string name="new_task">New Task</string>
+    <string name="completed_tasks">Completed Tasks</string>
+    <string name="new_order_txt">New &order; request</string>
+    <string name="time_left">Time Left</string>
+    <string name="time_left_txt">120 secs left</string>
+    <string name="started_restaurant">Started Towards Restaurant</string>
+    <string name="verification_code_txt">Verification Code</string>
+    <string name="continu">Continue</string>
+    <string name="start_shift">Start &shift;</string>
+    <string name="shift_status">&shift; Status</string>
+    <string name="end_shift">End &shift;</string>
+    <string name="vehicle_number">Enter the vehicle number</string>
+    <string name="name">Name</string>
+    <string name="user_id">User ID</string>
+    <string name="email">Email Address</string>
+    <string name="update">Update</string>
+    <string name="enter_mobile_number">"Enter Mobile Number"</string>
+    <string name="init_shift">Start &shift;</string>
+    <string name="wallet_detection">Wallet Detection</string>
+
+    <string name="reached_restaurant">"Reached Restaurant"</string>
+    <string name="order_picked_up">"&order; Picked Up"</string>
+    <string name="order_delivered">"&order; Delivered"</string>
+    <string name="payment_received">"Payment Received"</string>
+    <string name="back">"Back"</string>
+    <string name="profile">"Profile"</string>
+    <string name="order_history">"&order; History"</string>
+    <string name="order_message">&order; #%d</string>
+    <string name="you_owed">"You Owed "</string>
+    <string name="item_total">"Item Total"</string>
+    <string name="service_tax">"Service Tax"</string>
+    <string name="delivery_charges">"Delivery Charges"</string>
+    <string name="discount">"Discount"</string>
+    <string name="total">"Total"</string>
+    <string name="payment_mode">"Payment "</string>
+    <string name="no_of_items">"No. of Items"</string>
+    <string name="bill_amount">"Bill Amount"</string>
+    <string name="bill_paid">"Bill Paid"</string>
+    <string name="returned">"Returned"</string>
+    <string name="other">"Other"</string>
+    <string name="reason">"Reason"</string>
+    <string name="chat_us">"Chat us"</string>
+    <string name="call_us">"Call us"</string>
+    <string name="please_type_the_verification_code">"Please type the verification code sent to your"</string>
+    <string name="amount_to_be_paid">"Amount to be paid"</string>
+    <string name="please_handover_the_amount_earned">"Please handover the amount earned"</string>
+    <string name="please_settle_the_amount_to_the_respective_restaurant">"Please settle the amount to the respective restaurant"</string>
+    <string name="type_a_message">"Type a message"</string>
+    <string name="country_name">"Country name"</string>
+    <string name="feedback">"Feedback"</string>
+    <string name="how_was_the_delivery">"How was the delivery?"</string>
+    <string name="terrible">"Terrible"</string>
+    <string name="bad">"Bad"</string>
+    <string name="okay">"Okay"</string>
+    <string name="good">"Good"</string>
+    <string name="superb">"Superb"</string>
+    <string name="give_some_feedback_in_words">"Give some feedback in words."</string>
+    <string name="submit">"Submit"</string>
+    <string name="report">"Report"</string>
+    <string name="dispute">"Dispute"</string>
+    <string name="help">"Help"</string>
+    <string name="amount_to_pay">"Amount to Pay"</string>
+    <string name="otp">Otp</string>
+    <string name="enter_otp">Please enter otp</string>
+    <string name="please_enter_amount">Please enter amount</string>
+    <string name="invalid_otp">Invalid Otp</string>
+    <string name="full_amount">Please enter full amount</string>
+    <string name="enter_the_amount_paid">"Enter the amount paid"</string>
+    <string name="balance">"Balance"</string>
+    <string name="paid">"Paid"</string>
+    <string name="user">"User"</string>
+    <string name="shift">"&shift;"</string>
+    <string name="source">Source</string>
+    <string name="destination">Destination</string>
+    <string name="order_status">Order Status</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="call">Call</string>
+    <string name="navigation">Navigation</string>
+    <string name="network_error">Could not connect to internet!</string>
+    <string name="shop">Shop</string>
+    <string name="change_language">Change Language</string>
+    <string name="please_start_shift">Please start the shift</string>
+    <string name="cash">Cash</string>
+    <string name="card">Card</string>
+    <string name="order_cancelled">Order Cancelled</string>
+    <string name="the_order_has_been_cancelled_by_user">The order has been cancelled by user</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="logout">Logout</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+
+    <string name="live_task">LIVE TASK</string>
+    <string name="select_map">Select a map</string>
+</resources>

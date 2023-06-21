@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname  "Foodie Partner">
+    <!ENTITY order "Order">
+    <!ENTITY shift "Shift">
+    ]>
+<resources>
+
+    <string name="app_name">Good Riders</string>
+    <string name="mobile_number">رقم الهاتف المحمول</string>
+    <string name="break_">استراحة</string>
+    <string name="select_vehicle">حدد السيارة</string>
+    <string name="turn_on_start_shift">"Turn on Start &shift; to go for delivery"</string>
+    <string name="no_results">لا نتائج</string>
+    <string name="notice_board">لوح الإعلانات</string>
+    <string name="check_your_internet_connection">"Please check your Internet connection"</string>
+    <string name="waiting_for_new_task">في انتظار المهمة الجديدة</string>
+    <string name="terms_and_conditions">الأحكام والشروط</string>
+
+    <string name="connect_to_network">الاتصال بالشبكة أو إنهاء</string>
+    <string name="connect_to_wifi">الاتصال واي فاي</string>
+    <string name="quit">استقال</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="new_order_request">"New &order; Request"</string>
+    <string name="deliver">"Delivered"</string>
+    <string name="delivered">"Delivered"</string>
+    <string name="order_delivered_successfully">"&order; Delivered Successfully"</string>
+    <string name="order">"&order;"</string>
+    <string name="orders">"&order;s"</string>
+    <string name="new_task">مهمة جديدة</string>
+    <string name="completed_tasks">المهام المكتملة</string>
+    <string name="new_order_txt">طلب طلب جديد</string>
+    <string name="time_left">Time Left</string>
+    <string name="time_left_txt">120 secs left</string>
+    <string name="started_restaurant">Started Towards Restaurant</string>
+    <string name="verification_code_txt">Verification Code</string>
+    <string name="continu">Continue</string>
+    <string name="start_shift">بدء التحول</string>
+    <string name="shift_status">حالة التحول</string>
+    <string name="end_shift">نهاية التحول</string>
+    <string name="vehicle_number">Enter the vehicle number</string>
+    <string name="name">اسم</string>
+    <string name="user_id">User ID</string>
+    <string name="email">عنوان البريد الإلكتروني</string>
+    <string name="update">تحديث</string>
+    <string name="enter_mobile_number">أدخل رقم الجوال</string>
+    <string name="init_shift">Start &shift;</string>
+    <string name="wallet_detection">Wallet Detection</string>
+
+    <string name="reached_restaurant">"Reached Restaurant"</string>
+    <string name="order_picked_up">"&order; Picked Up"</string>
+    <string name="order_delivered">"&order; Delivered"</string>
+    <string name="payment_received">تلقى الدفع</string>
+    <string name="back">الى الخلف</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="order_history">"&order; History"</string>
+    <string name="order_message">&order; #%d</string>
+    <string name="you_owed">" أنت مالك "</string>
+    <string name="item_total">مجموع الاشياء</string>
+    <string name="service_tax">"ضريبة الخدمة"</string>
+    <string name="delivery_charges">"رسوم التوصيل"</string>
+    <string name="discount">"خصم"</string>
+    <string name="total">"مجموع"</string>
+    <string name="payment_mode">"Payment "</string>
+    <string name="no_of_items">أي من العناصر</string>
+    <string name="bill_amount">مبلغ الفاتورة</string>
+    <string name="bill_paid">فاتورة مدفوعة</string>
+    <string name="returned">عاد</string>
+    <string name="other">آخر</string>
+    <string name="reason">"السبب"</string>
+    <string name="chat_us">"دردشة معنا"</string>
+    <string name="call_us">"اتصل بنا"</string>
+    <string name="please_type_the_verification_code">"Please type the verification code sent to your"</string>
+    <string name="amount_to_be_paid">"المبلغ المستحق للدفع"</string>
+    <string name="please_handover_the_amount_earned">"Please handover the amount earned"</string>
+    <string name="please_settle_the_amount_to_the_respective_restaurant">"Please settle the amount to the respective restaurant"</string>
+    <string name="type_a_message">"Type a message"</string>
+    <string name="country_name">"Country name"</string>
+    <string name="feedback">"Feedback"</string>
+    <string name="how_was_the_delivery">"How was the delivery?"</string>
+    <string name="terrible">"Terrible"</string>
+    <string name="bad">"Bad"</string>
+    <string name="okay">"Okay"</string>
+    <string name="good">"Good"</string>
+    <string name="superb">"Superb"</string>
+    <string name="give_some_feedback_in_words">"Give some feedback in words."</string>
+    <string name="submit">"Submit"</string>
+    <string name="report">"Report"</string>
+    <string name="dispute">"Dispute"</string>
+    <string name="help">"Help"</string>
+    <string name="amount_to_pay">"Amount to Pay"</string>
+    <string name="enter_the_amount_paid">"Enter the amount paid"</string>
+    <string name="balance">"Balance"</string>
+    <string name="paid">"Paid"</string>
+    <string name="user">"User"</string>
+    <string name="shift">"&shift;"</string>
+    <string name="source">Source</string>
+    <string name="destination">Destination</string>
+    <string name="order_status">Order Status</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="call">Call</string>
+    <string name="navigation">Navigation</string>
+    <string name="network_error">Could not connect to internet!</string>
+    <string name="shop">Shop</string>
+    <string name="change_language">Change Language</string>
+    <string name="please_start_shift">Please start the shift</string>
+    <string name="cash">Cash</string>
+    <string name="card">Card</string>
+    <string name="order_cancelled">Order Cancelled</string>
+    <string name="the_order_has_been_cancelled_by_user">The order has been cancelled by user</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="logout">Logout</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+
+    <string name="live_task">LIVE TASK</string>
+</resources>

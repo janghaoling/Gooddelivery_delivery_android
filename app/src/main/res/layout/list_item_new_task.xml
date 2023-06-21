@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/task_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:clickable="true"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dcdcdc">
+
+                <TextView
+                    android:id="@+id/order_status"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/time_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:text="@string/time_left_txt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/shop_avatar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@string/shop"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/burg" />
+
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/shop_avatar"
+                    android:layout_toRightOf="@+id/shop_avatar"
+                    android:maxLines="1"
+                    android:text="@string/new_order_txt"
+                    android:textSize="16sp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/shop_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_name"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginRight="26dp"
+                    android:layout_toEndOf="@+id/shop_avatar"
+                    android:layout_toRightOf="@+id/shop_avatar"
+                    android:maxLines="3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/right_arrow" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/accept_reject_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/reject_btn"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorRed"
+                    android:text="@string/reject"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+                <Button
+                    android:id="@+id/accept_btn"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/green_dark"
+                    android:text="@string/accept"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
